@@ -1,0 +1,44 @@
+{
+  "name": "hogswap-v3-js-sdk",
+  "version": "0.1.0",
+  "private": true,
+  "description": "JavaScript SDK for the HogSwap v3 router on Algorand: best-price swap quotes across Algorand DEXes, unsigned transaction groups for any wallet, the referral programme for platforms, and market data.",
+  "type": "module",
+  "main": "./src/index.js",
+  "module": "./src/index.js",
+  "types": "./types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "import": "./src/index.js"
+    }
+  },
+  "files": [
+    "src",
+    "types",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test",
+    "example:quote": "node examples/node-quote.mjs"
+  },
+  "keywords": [
+    "algorand",
+    "dex",
+    "swap",
+    "aggregator",
+    "router",
+    "defi",
+    "hogswap",
+    "liquihog",
+    "referral"
+  ],
+  "author": "LiquiHog",
+  "license": "MIT",
+  "sideEffects": false
+}
